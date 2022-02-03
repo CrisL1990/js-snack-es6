@@ -36,7 +36,7 @@ for(let i = 0; i < squadre.length; i++){
 
     let {nome, falli} = squadre[i];
 
-    myList.push(nome, falli);
+    myList.push({nome, falli});
 }
 
 function randomNumber(){
