@@ -20,19 +20,18 @@ let bicicletta = [
         nome : "bici4",
         peso : 3
     }
-]
+];
 
-let listaPesi = [];
+let biciLeggera = bicicletta[0];
 
-for(let i = 0; i < bicicletta.length; i++){
-    let {peso} = bicicletta[i];
-    listaPesi.push(peso);
+for (let i = 0; i < bicicletta.length; i++){
+    if(bicicletta.peso < biciLeggera[i].peso){
+        biciLeggera = bicicletta[i];
+    }
 }
 
-let pesoMaggiore = Math.max(...listaPesi);
 
-
-console.log(pesoMaggiore);
+console.log(biciLeggera);
 
 
 
